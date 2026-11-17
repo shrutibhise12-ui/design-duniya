@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 267" font-family="Noto Sans, Arial, sans-serif">
+<rect width="400" height="267" fill="#ededed"/>
+<g>
+<rect x="24" y="44" width="164" height="190" fill="#fff" stroke="#111" stroke-width="1.5"/>
+<text x="106" y="30" text-anchor="middle" font-size="13" font-weight="700" fill="#111">DIWALI WEEK</text>
+<circle cx="106" cy="128" r="22" fill="#ff4d1a"/>
+<path d="M106 140c-9-7-12-11-12-16 0-4 3-7 7-7 2 0 4 1 5 3 1-2 3-3 5-3 4 0 7 3 7 7 0 5-3 9-12 16z" fill="#fff"/>
+<g stroke="#ff4d1a" stroke-width="2" stroke-linecap="round"><path d="M106 86v12M70 100l9 8M142 100l-9 8M64 128h12M136 128h12"/></g>
+<text x="106" y="196" text-anchor="middle" font-size="12" fill="#111">Surprising. People smile.</text>
+<text x="106" y="216" text-anchor="middle" font-size="11" fill="#555">Worth opening the app for</text>
+</g>
+<g>
+<rect x="212" y="44" width="164" height="190" fill="#fff" stroke="#111" stroke-width="1.5"/>
+<text x="294" y="30" text-anchor="middle" font-size="13" font-weight="700" fill="#111">FEBRUARY</text>
+<circle cx="294" cy="128" r="22" fill="#bbb"/>
+<path d="M294 140c-9-7-12-11-12-16 0-4 3-7 7-7 2 0 4 1 5 3 1-2 3-3 5-3 4 0 7 3 7 7 0 5-3 9-12 16z" fill="#fff"/>
+<g stroke="#bbb" stroke-width="2" stroke-linecap="round"><path d="M294 86v12M258 100l9 8M330 100l-9 8M252 128h12M324 128h12"/></g>
+<text x="294" y="196" text-anchor="middle" font-size="12" fill="#111">Same effect. Now it's clutter.</text>
+<text x="294" y="216" text-anchor="middle" font-size="11" fill="#555">Remove it after the festival</text>
+</g>
+</svg>
