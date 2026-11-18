@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 267">
+<style>
+.il-paper{fill:#fff;stroke:#111;stroke-width:1.5}.il-line{fill:none;stroke:#111;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.il-ink{fill:#111}.il-mute{fill:#D6D6D6}.il-white{fill:#fff}.il-acc{fill:#1F3BFF}.il-hot{fill:#FF4B14}
+.il-spark{fill:none;stroke-width:4;stroke-linecap:round}
+.il-flame{fill:#FF4B14;transform-box:fill-box;transform-origin:50% 100%}
+.il-sans{font-family:"Noto Sans","Segoe UI",system-ui,sans-serif;font-weight:600}
+@media (prefers-reduced-motion:no-preference){.il-flame{animation:f 1.8s ease-in-out infinite}.burst{animation:b 2.4s ease-out infinite;transform-box:fill-box;transform-origin:center}}
+@keyframes f{0%,100%{transform:scale(1,1) rotate(0)}30%{transform:scale(.92,1.1) rotate(-3deg)}60%{transform:scale(1.06,.92) rotate(2deg)}}
+@keyframes b{0%{transform:scale(.55);opacity:0}18%{opacity:1}60%{transform:scale(1);opacity:1}100%{transform:scale(1.08);opacity:0}}
+</style>
+
+<rect class="il-paper" x="60" y="34" width="280" height="46" rx="23"/>
+<circle class="il-line" cx="88" cy="56" r="8"/><path class="il-line" d="M94 62L101 69"/>
+<text class="il-sans il-ink" x="114" y="62" font-size="17">Diwali</text>
+<rect class="il-paper" x="60" y="104" width="84" height="128" rx="8"/>
+<rect class="il-paper" x="158" y="104" width="84" height="128" rx="8"/>
+<rect class="il-paper" x="256" y="104" width="84" height="128" rx="8"/>
+<g transform="translate(102 160) scale(1.15)"><path class="il-flame" d="M0-24C6-16 7-9 0-5C-7-9-6-16 0-24Z"/><path class="il-ink" d="M-15 0H15C13 11 6 15 0 15C-6 15-13 11-15 0Z"/></g>
+<g transform="translate(200 162)"><rect class="il-acc" x="-16" y="-16" width="32" height="32" transform="rotate(45)"/><rect class="il-white" x="-8" y="-8" width="16" height="16" transform="rotate(45)"/></g>
+<g transform="translate(298 160)"><path class="il-line" d="M-22 -18Q0 -4 22 -18"/><circle class="il-hot" cx="-12" cy="-10" r="5"/><circle class="il-acc" cx="0" cy="-6" r="5"/><circle class="il-hot" cx="12" cy="-10" r="5"/><rect class="il-ink" x="-14" y="6" width="28" height="18" rx="3"/></g>
+<rect class="il-mute" x="76" y="206" width="52" height="8" rx="4"/><rect class="il-mute" x="174" y="206" width="52" height="8" rx="4"/><rect class="il-mute" x="272" y="206" width="52" height="8" rx="4"/>
+</svg>
