@@ -385,6 +385,8 @@ html.is-intro .intro__skip {
 
 /* ---------- Generated-page additions ---------- */
 .media img, .ba__panel img { display: block; width: 100%; height: 100%; object-fit: contain; }
+/* Photos fill their frame (no empty bands); illustrations are already drawn to fit. */
+.lead2__fig .media img, .col .media img, .rel__img img { object-fit: cover; }
 .media--type { display: grid; place-items: center; padding: 8%; text-align: center; }
 .media--type span { font: 800 clamp(40px, 7vw, 104px)/0.9 var(--display); font-stretch: 75%; letter-spacing: -0.01em; overflow-wrap: anywhere; }
 .media--type.tone-neel { color: var(--paper); }
@@ -672,7 +674,7 @@ a.media:hover { text-decoration: none; }
   /* phone: the lead keeps a full-width picture; the stories below become compact rows with a small thumbnail, so the two never look alike */
   .lead2 { display: block; margin-top: 24px; }
   .lead2__fig { margin: 20px calc(var(--gutter) * -1) 0; }
-  .lead2__fig .media { aspect-ratio: 4 / 3; transform: none; }
+  .lead2__fig .media { aspect-ratio: 3 / 2; transform: none; }
   .duo { display: block; margin-top: 28px; padding-top: 0; border-top: 0; }
   .col, .col + .col { display: grid; grid-template-columns: minmax(0, 1fr) 96px; column-gap: 16px; align-items: start; padding: 20px 0; margin: 0; border-left: 0; border-top: 1.5px solid var(--ink); }
   .col > * { grid-column: 1; min-width: 0; }
