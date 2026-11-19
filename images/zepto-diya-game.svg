@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+<style>
+.p{fill:#fff;stroke:#111;stroke-width:1.5}.l{fill:none;stroke:#111;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.k{fill:#111}.m{fill:#D6D6D6}.w{fill:#fff}.h{fill:#FF4B14}.y{fill:#FFD60A}.n{fill:#1F3BFF}
+.t{font-family:"Noto Sans",Arial,sans-serif;fill:#111}
+@media (prefers-reduced-motion:no-preference){.fl{animation:f 1.6s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 100%}.bl{animation:g 2.4s ease-in-out infinite}}
+@keyframes f{0%,100%{transform:scale(1)}50%{transform:scale(1.12,1.18)}}@keyframes g{0%,100%{opacity:1}50%{opacity:.45}}
+</style>
+<rect width="800" height="450" fill="#EDEDED"/>
+<rect class="p" x="285" y="30" width="230" height="390" rx="24"/><rect class="k" x="372.0" y="42" width="56" height="6" rx="3"/><text class="t" x="400" y="80" font-size="18" text-anchor="middle" font-weight="700">Light the diya</text><text class="t" x="400" y="102" font-size="12" text-anchor="middle" fill="#5A5A5A">Win festive rewards</text><circle cx="400" cy="222" r="78" fill="#FFD60A" opacity=".35"/><g transform="translate(400 250) scale(1.3)"><path class="fl h" d="M0 -46c10 12 14 22 0 34c-14-12-10-22 0-34z"/><path class="y" d="M0 -38c5 7 6 13 0 20c-6-7-5-13 0-20z"/><path d="M-40 -8h80c-4 22-20 34-40 34s-36-12-40-34z" fill="#FF4B14" stroke="#111" stroke-width="1.5"/><path class="l" d="M-30 4h60" stroke="#FFD60A"/></g><rect class="k" x="315" y="340" width="170" height="46" rx="23"/><text x="400" y="368" font-size="15" text-anchor="middle" fill="#fff" font-weight="700" font-family="Noto Sans,Arial,sans-serif">Tap to light</text><g transform="translate(585 210)" class="t"><rect class="p" x="0" y="0" width="160" height="110" rx="14"/><text x="80" y="40" font-size="13" text-anchor="middle" fill="#5A5A5A">Diya lit</text><text x="80" y="68" font-size="17" text-anchor="middle" font-weight="800">Reward unlocked</text><rect class="y" x="40" y="84" width="80" height="8" rx="4"/></g>
+</svg>

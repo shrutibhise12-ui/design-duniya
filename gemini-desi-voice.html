@@ -868,5 +868,19 @@ a.media:hover { text-decoration: none; }
   window.addEventListener('load', top);
 })();
 </script>
+<style>
+/* Fallback card when an image fails to load, so no box is ever blank. */
+.img-missing { display: grid !important; place-items: center; background: #FFD60A !important; }
+.img-missing::after { content: "Design Duniya"; padding: 6px; text-align: center; font: 800 clamp(13px, 2.6vw, 30px)/1 "Anek Latin", "Noto Sans", sans-serif; color: #111; letter-spacing: -0.02em; }
+</style>
+<script>
+(function () {
+  function miss(img) { var box = img.closest('.media, .rel__img, .lead2__fig'); if (!box) return; box.classList.add('img-missing'); img.remove(); }
+  document.querySelectorAll('.media img, .rel__img img, .lead2__fig img').forEach(function (img) {
+    if (img.complete && img.getAttribute('src') && !img.naturalWidth) miss(img);
+    else img.addEventListener('error', function () { miss(img); });
+  });
+})();
+</script>
 </body>
 </html>

@@ -723,7 +723,10 @@ a.media:hover { text-decoration: none; }
         <span class="article__avatar" aria-hidden="true">D</span>
         <p><b>Design Duniya</b><br><span class="mono mute">9 Nov 2026 &nbsp;·&nbsp; 1 min read</span></p>
       </div>
-      <figure class="article__hero"><div class="media tone-fog article__post"><blockquote class="twitter-tweet" data-dnt="true" data-conversation="none"><a href="https://twitter.com/psychodelic_me2/status/2118389954267238501">Open the post by @psychodelic_me2 on X</a></blockquote></div></figure>
+      <figure class="article__hero">
+        <div class="media tone-board"><img src="images/blinkit-lights.svg" alt=""></div>
+        <figcaption class="mono">An impression of the Change Lights button. Illustration, not a screenshot</figcaption>
+      </figure>
       <div class="article__cols3">
         <p>One designer opened Blinkit to order something and, five minutes later, was still changing the lights.</p>
         <p>By her account on LinkedIn, the app’s Diwali page has a small button labelled Change Lights. Press it and the string of fairy lights across the page turns green. Press again, blue. Again, red, each change with its own little animation. She admitted the button held her attention longer than the products she had come for.</p>
@@ -731,6 +734,7 @@ a.media:hover { text-decoration: none; }
         <p>Blinkit paired it with heavier machinery. Social Samosa reports a rocket challenge, in which shoppers pick products and win a reward, along with festive shelves that include a section of regional sweets called Flavours from Every Corner and another stocked for taash night, clean-up supplies included. That last one shows someone thought about the morning after.</p>
       </div>
       
+      <figure class="article__post-after"><p class="mono mute">The Diwali page, as one user posted it on X</p><blockquote class="twitter-tweet" data-dnt="true" data-conversation="none"><a href="https://twitter.com/psychodelic_me2/status/2118389954267238501">Open the post by @psychodelic_me2 on X</a></blockquote><figcaption class="mono">Source: posted on X by @psychodelic_me2. Shown through X’s own embed.</figcaption></figure>
       <div class="article__facts">
         <div><p class="mono mute">What changed</p><p>A “Change Lights” button on its Diwali page cycles the string lights through green, blue and red. A rocket challenge rewards shoppers, too.</p></div>
         <div><p class="mono mute">Why it works</p><ul class="why"><li>It gives people something to play with, not just look at.</li><li>Each press pays off at once, which invites another.</li><li>There is nothing to learn: one button, one result.</li></ul></div>
@@ -748,15 +752,15 @@ a.media:hover { text-decoration: none; }
           <span class="rel__txt"><span class="mono rel__k">Soch</span><span class="rel__t">Apps should take their Diwali features <em>down</em> after Diwali</span><span class="mono mute">3 min read</span></span>
         </a></li>
         <li><a class="rel" href="arattai-diya-name.html">
-          <span class="rel__img tone-fog"><b>Arattai</b></span>
+          <span class="rel__img tone-board"><img src="images/arattai-diya-name.svg" alt="" loading="lazy"></span>
           <span class="rel__txt"><span class="mono rel__k">Festive</span><span class="rel__t">Arattai lights a diya beside your name</span><span class="mono mute">1 min read</span></span>
         </a></li>
         <li><a class="rel" href="igp-guard-gift.html">
-          <span class="rel__img tone-fog"><b>IGP</b></span>
+          <span class="rel__img tone-board"><img src="images/igp-guard-gift.svg" alt="" loading="lazy"></span>
           <span class="rel__txt"><span class="mono rel__k">Soch</span><span class="rel__t">A gift for the building’s guards, added at checkout</span><span class="mono mute">1 min read</span></span>
         </a></li>
         <li><a class="rel" href="swiggy-sweety.html">
-          <span class="rel__img tone-fog"><b>Swiggy</b></span>
+          <span class="rel__img tone-board"><img src="images/swiggy-sweety.svg" alt="" loading="lazy"></span>
           <span class="rel__txt"><span class="mono rel__k">Taaza</span><span class="rel__t">Swiggy answers to ‘Sweety’ for Diwali</span><span class="mono mute">1 min read</span></span>
         </a></li>
       </ul>
@@ -859,6 +863,20 @@ a.media:hover { text-decoration: none; }
   top();
   window.addEventListener('pageshow', top);
   window.addEventListener('load', top);
+})();
+</script>
+<style>
+/* Fallback card when an image fails to load, so no box is ever blank. */
+.img-missing { display: grid !important; place-items: center; background: #FFD60A !important; }
+.img-missing::after { content: "Design Duniya"; padding: 6px; text-align: center; font: 800 clamp(13px, 2.6vw, 30px)/1 "Anek Latin", "Noto Sans", sans-serif; color: #111; letter-spacing: -0.02em; }
+</style>
+<script>
+(function () {
+  function miss(img) { var box = img.closest('.media, .rel__img, .lead2__fig'); if (!box) return; box.classList.add('img-missing'); img.remove(); }
+  document.querySelectorAll('.media img, .rel__img img, .lead2__fig img').forEach(function (img) {
+    if (img.complete && img.getAttribute('src') && !img.naturalWidth) miss(img);
+    else img.addEventListener('error', function () { miss(img); });
+  });
 })();
 </script>
 </body>
