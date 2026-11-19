@@ -13,7 +13,7 @@
 <meta property="og:title" content="Design Duniya — UI/UX design news from India">
 <meta property="og:description" content="New feature releases from Indian apps, and the design thinking behind them.">
 <meta property="og:url" content="https://designduniya.vercel.app/">
-<meta property="og:image" content="https://designduniya.vercel.app/images/apple-maps-india.svg">
+<meta property="og:image" content="https://designduniya.vercel.app/images/blinkit-gta6-box.svg">
 <meta name="twitter:card" content="summary_large_image">
 
 <!-- Decide before first paint whether the unfold intro plays (once per session, never with reduced motion). -->
@@ -395,6 +395,7 @@ html.is-intro .intro__skip {
 .media img, .ba__panel img { display: block; width: 100%; height: 100%; object-fit: contain; }
 /* Photos fill their frame (no empty bands); illustrations are already drawn to fit. */
 .lead2__fig .media img, .col .media img, .rel__img img { object-fit: cover; }
+.media img[src$=".svg"] { object-fit: contain; }
 .media--type { display: grid; place-items: center; padding: 8%; text-align: center; }
 .media--type span { font: 800 clamp(40px, 7vw, 104px)/0.9 var(--display); font-stretch: 75%; letter-spacing: -0.01em; overflow-wrap: anywhere; }
 .media--type.tone-neel { color: var(--paper); }
@@ -798,9 +799,9 @@ a.media:hover { text-decoration: none; }
     <nav class="contents" aria-labelledby="contents-head">
       <h2 class="mono" id="contents-head">In this issue</h2>
       <ol>
-        <li><span class="mono mute">Feature</span><a href="#lead">Apple Maps gives directions the Indian way</a></li>
+        <li><span class="mono mute">Feature</span><a href="#lead">Blinkit delivers GTA 6 in a box</a></li>
         <li><span class="mono mute">News</span><a href="#news-1">A Shorts limit of zero</a></li>
-        <li><span class="mono mute">News</span><a href="#news-2">Blinkit delivers GTA 6 in a box</a></li>
+        <li><span class="mono mute">News</span><a href="#news-2">Apple Maps gives directions the Indian way</a></li>
         <li><span class="mono mute">Issue 02</span><a href="#news-3">Gemini speaks Hindi and Indian English</a></li>
         <li><span class="mono mute">Quick reads</span><a href="#quick">Cred, Alexa, Zomato and more</a></li>
         <li><span class="mono mute">Diwali issue</span><a href="#festive">Diwali in Indian apps</a></li>
@@ -815,12 +816,12 @@ a.media:hover { text-decoration: none; }
 
   <article class="wrap lead2 reveal" style="--i:3" id="lead">
     <div class="lead2__text">
-      <p class="kick mono"><i class="logo logo--text" aria-hidden="true">A</i><span><b>Feature</b> / Apple Maps / 3 min read</span></p>
-      <h2 class="hl hl--xl"><a href="apple-maps-india.html">Apple Maps learns to give directions the Indian way</a></h2>
-      <p class="dek">Turn right after the petrol pump: the redesigned Maps reaches India with landmark-based directions and place names in two scripts.</p>
-      <a class="go" href="apple-maps-india.html">Read story <span aria-hidden="true">→</span></a>
+      <p class="kick mono"><i class="logo" aria-hidden="true"><img src="images/logos/blinkit.png" alt=""></i><span><b>Feature</b> / Blinkit / 2 min read</span></p>
+      <h2 class="hl hl--xl"><a href="blinkit-gta6-box.html">Blinkit delivers a download code in a box</a></h2>
+      <p class="dek">GTA 6 is out today. Hours before it unlocked, Blinkit delivered boxed PS5 codes in 11 cities at the PlayStation Store price, giving a digital launch something to unbox.</p>
+      <a class="go" href="blinkit-gta6-box.html">Read story <span aria-hidden="true">→</span></a>
     </div>
-    <figure class="lead2__fig"><a class="media tone-board" href="apple-maps-india.html" tabindex="-1"><img src="images/apple-maps-india.svg" alt="" loading="lazy"></a></figure>
+    <figure class="lead2__fig"><a class="media tone-board" href="blinkit-gta6-box.html" tabindex="-1"><img src="images/blinkit-gta6-box.svg" alt="" loading="lazy"></a></figure>
   </article>
 
   <section class="wrap duo" id="taaza">
@@ -834,11 +835,11 @@ a.media:hover { text-decoration: none; }
     </article>
     <article class="col" id="news-2">
       <span></span>
-      <a class="media tone-board" href="blinkit-gta6-box.html" tabindex="-1" aria-hidden="true"><img src="images/blinkit-gta6-box.svg" alt="" loading="lazy"></a>
-      <p class="kick mono"><i class="logo" aria-hidden="true"><img src="images/logos/blinkit.png" alt=""></i><span><b>News</b> / Blinkit / 2 min read</span></p>
-      <h3 class="hl hl--l"><a href="blinkit-gta6-box.html">Blinkit delivers a download code in a box</a></h3>
-      <p class="dek">Hours before GTA 6 unlocked in India, boxed PS5 codes went out in 11 cities at the PlayStation Store price. Something to unbox before midnight.</p>
-      <a class="arrow" href="blinkit-gta6-box.html" aria-label="Read: Blinkit delivers a download code in a box">→</a>
+      <a class="media tone-board" href="apple-maps-india.html" tabindex="-1" aria-hidden="true"><img src="images/apple-maps-india.svg" alt="" loading="lazy"></a>
+      <p class="kick mono"><i class="logo logo--text" aria-hidden="true">A</i><span><b>News</b> / Apple Maps / 3 min read</span></p>
+      <h3 class="hl hl--l"><a href="apple-maps-india.html">Apple Maps learns to give directions the Indian way</a></h3>
+      <p class="dek">Turn right after the petrol pump: the redesigned Maps reaches India with landmark-based directions and place names in two scripts.</p>
+      <a class="arrow" href="apple-maps-india.html" aria-label="Read: Apple Maps learns to give directions the Indian way">→</a>
     </article>
   </section>
 
@@ -922,9 +923,9 @@ a.media:hover { text-decoration: none; }
 
   <section class="wrap wk" id="weekly" aria-labelledby="weekly-head">
     <h2 class="wk__title" id="weekly-head">Weekly Edition</h2>
-    <p class="wk__text">Directions by landmark, a Shorts feed set to zero and a game delivered in a box: how Indian apps changed this week, folded into a single issue. No ads, no pop-ups.</p>
+    <p class="wk__text">GTA 6 delivered in a box, directions by landmark and a Shorts feed set to zero: how Indian apps changed this week, folded into a single issue. No ads, no pop-ups.</p>
     <p class="wk__meta mono">Vol. 1, Issue 03<br>14 Nov – 19 Nov 2026</p>
-    <a class="wk__btn" href="apple-maps-india.html">Read edition <span aria-hidden="true">→</span></a>
+    <a class="wk__btn" href="blinkit-gta6-box.html">Read edition <span aria-hidden="true">→</span></a>
   </section>
 </main>
 
