@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+<style>
+.il-paper{fill:#fff;stroke:#111;stroke-width:1.5}.il-line{fill:none;stroke:#111;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.il-ink{fill:#111}.il-mute{fill:#D6D6D6}.il-white{fill:#fff}.il-acc{fill:#1F3BFF}.il-hot{fill:#FF4B14}
+.il-mono{font-family:"Noto Sans Mono",ui-monospace,monospace;font-weight:500}
+.il-sans{font-family:"Noto Sans","Segoe UI",system-ui,sans-serif;font-weight:700}
+@media (prefers-reduced-motion:no-preference){.hand{animation:h 6s linear infinite;transform-box:view-box;transform-origin:170px 150px}.star{animation:t 2.4s ease-in-out infinite}}
+@keyframes h{from{transform:rotate(-24deg)}to{transform:rotate(0)}}
+@keyframes t{0%,100%{opacity:1}50%{opacity:.3}}
+</style>
+
+<!-- night sky -->
+<g class="star"><circle class="il-ink" cx="330" cy="60" r="3"/><circle class="il-ink" cx="420" cy="40" r="2"/><circle class="il-ink" cx="610" cy="70" r="3"/><circle class="il-ink" cx="700" cy="44" r="2"/></g>
+<path class="il-ink" d="M520 40A30 30 0 1 0 548 82A24 24 0 1 1 520 40Z"/>
+
+<!-- clock near midnight -->
+<circle class="il-paper" cx="170" cy="150" r="88"/>
+<g class="il-ink"><rect x="167" y="70" width="6" height="14" rx="2"/><rect x="167" y="216" width="6" height="14" rx="2"/><rect x="90" y="147" width="14" height="6" rx="2"/><rect x="236" y="147" width="14" height="6" rx="2"/></g>
+<path class="il-line" d="M170 150L170 104" stroke-width="6"/>
+<g class="hand"><path class="il-line" d="M170 150L170 80" stroke-width="3.5" style="stroke:#FF4B14"/></g>
+<circle class="il-ink" cx="170" cy="150" r="7"/>
+
+<!-- door threshold -->
+<path class="il-line" d="M60 392H740" stroke-width="2.5"/>
+
+<!-- the box -->
+<g transform="translate(330 170)">
+  <path class="il-paper" d="M0 60L120 20L240 60V210L120 250L0 210Z"/>
+  <path class="il-line" d="M0 60L120 100L240 60M120 100V250"/>
+  <path class="il-mute" d="M121 101L239 61V209L121 249Z"/>
+  <!-- code card poking out -->
+  <g transform="translate(18 118) skewY(18)">
+    <rect class="il-ink" x="0" y="0" width="92" height="56" rx="6"/>
+    <text class="il-mono" x="10" y="24" font-size="12" fill="#fff">XXXX-XXXX</text>
+    <rect class="il-hot" x="10" y="34" width="40" height="8" rx="4"/>
+  </g>
+  <!-- delivery tape -->
+  <path d="M60 40L180 80" stroke="#FFD60A" stroke-width="14"/>
+</g>
+
+<!-- delivery bag tag -->
+<g transform="translate(620 250)">
+  <rect class="il-paper" x="0" y="0" width="120" height="58" rx="10"/>
+  <text class="il-sans il-ink" x="16" y="37" font-size="22">₹5,999</text>
+</g>
+<path class="il-line" d="M620 280L574 290"/>
+</svg>

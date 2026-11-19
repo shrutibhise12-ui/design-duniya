@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+<style>
+.il-paper{fill:#fff;stroke:#111;stroke-width:1.5}.il-line{fill:none;stroke:#111;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.il-ink{fill:#111}.il-mute{fill:#D6D6D6}.il-white{fill:#fff}.il-acc{fill:#1F3BFF}.il-hot{fill:#FF4B14}
+.il-road{fill:none;stroke:#D6D6D6;stroke-width:22;stroke-linecap:round;stroke-linejoin:round}
+.il-route{fill:none;stroke:#1F3BFF;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:14 10}
+.il-sans{font-family:"Noto Sans","Segoe UI",system-ui,sans-serif;font-weight:600}
+.il-deva{font-family:"Anek Devanagari","Noto Sans Devanagari","Noto Sans",sans-serif;font-weight:700}
+@media (prefers-reduced-motion:no-preference){.il-route{animation:r 3s linear infinite}.dot{animation:g 2.2s ease-in-out infinite;transform-box:fill-box;transform-origin:center}}
+@keyframes r{to{stroke-dashoffset:-48}}
+@keyframes g{0%,100%{transform:scale(1)}50%{transform:scale(1.25)}}
+</style>
+
+<!-- phone -->
+<rect class="il-paper" x="250" y="30" width="300" height="400" rx="26"/>
+<rect class="il-ink" x="370" y="44" width="60" height="7" rx="3.5"/>
+<!-- map area -->
+<g>
+  <path class="il-road" d="M290 400V250H520"/>
+  <path class="il-road" d="M400 250V80"/>
+  <path class="il-road" d="M290 160H520"/>
+  <path class="il-route" d="M290 400V250H400V100"/>
+  <!-- 3D landmark block -->
+  <g transform="translate(450 190)">
+    <path class="il-paper" d="M0 0L28-12L56 0V40L28 52L0 40Z"/>
+    <path class="il-line" d="M0 0L28 12L56 0M28 12V52"/>
+    <path class="il-mute" d="M1 1.5L27 12.5V50L1 39Z"/>
+  </g>
+  <!-- petrol pump landmark -->
+  <g transform="translate(310 282)">
+    <rect class="il-hot" x="0" y="0" width="24" height="32" rx="3"/>
+    <rect class="il-white" x="5" y="5" width="14" height="9" rx="1.5"/>
+    <path class="il-line" d="M24 8H30V26"/>
+  </g>
+  <!-- current position -->
+  <circle class="il-acc dot" cx="290" cy="370" r="10"/>
+  <circle class="il-white" cx="290" cy="370" r="4"/>
+  <!-- destination pin -->
+  <g transform="translate(400 98)"><path class="il-ink" d="M0 0C-12-14-14-20-14-26A14 14 0 0 1 14-26C14-20 12-14 0 0Z"/><circle class="il-white" cx="0" cy="-26" r="5"/></g>
+</g>
+<!-- dual-language street label -->
+<g transform="translate(296 168)">
+  <rect class="il-paper" x="0" y="0" width="92" height="44" rx="6"/>
+  <text class="il-sans il-ink" x="10" y="18" font-size="13">Station Rd</text>
+  <text class="il-deva il-ink" x="10" y="36" font-size="14" lang="hi">स्टेशन रोड</text>
+</g>
+<!-- guidance banner -->
+<g transform="translate(560 120)">
+  <rect class="il-paper" x="0" y="0" width="200" height="86" rx="14"/>
+  <path class="il-line" d="M22 62V34H44" stroke-width="4"/><path class="il-ink" d="M42 26L54 34L42 42Z"/>
+  <rect class="il-ink" x="70" y="24" width="110" height="9" rx="4.5"/>
+  <rect class="il-mute" x="70" y="42" width="88" height="9" rx="4.5"/>
+  <rect class="il-hot" x="70" y="60" width="16" height="9" rx="2"/><rect class="il-mute" x="92" y="60" width="54" height="9" rx="4.5"/>
+</g>
+<path class="il-line" d="M560 170L536 182"/>
+<!-- speech marks, left -->
+<g transform="translate(60 250)">
+  <rect class="il-paper" x="0" y="0" width="170" height="64" rx="14"/>
+  <path class="il-paper" d="M150 64L172 82L140 64Z"/>
+  <rect class="il-ink" x="18" y="18" width="120" height="8" rx="4"/>
+  <rect class="il-mute" x="18" y="36" width="90" height="8" rx="4"/>
+</g>
+</svg>

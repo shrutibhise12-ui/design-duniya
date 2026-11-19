@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+<style>
+.il-paper{fill:#fff;stroke:#111;stroke-width:1.5}.il-line{fill:none;stroke:#111;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.il-ink{fill:#111}.il-mute{fill:#D6D6D6}.il-white{fill:#fff}.il-acc{fill:#1F3BFF}.il-hot{fill:#FF4B14}
+.il-sans{font-family:"Noto Sans","Segoe UI",system-ui,sans-serif;font-weight:700}
+@media (prefers-reduced-motion:no-preference){.stack{animation:s 3.2s ease-in-out infinite}.lock{animation:k 3.2s ease-in-out infinite;transform-box:fill-box;transform-origin:center}}
+@keyframes s{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes k{0%,60%,100%{transform:rotate(0)}70%{transform:rotate(-8deg)}80%{transform:rotate(8deg)}90%{transform:rotate(0)}}
+</style>
+
+<!-- left phone: vertical feed, stopped -->
+<rect class="il-paper" x="120" y="34" width="220" height="384" rx="24"/>
+<rect class="il-ink" x="200" y="48" width="60" height="6" rx="3"/>
+<g class="stack">
+  <rect class="il-mute" x="140" y="70" width="180" height="150" rx="10"/>
+  <rect class="il-mute" x="140" y="232" width="180" height="150" rx="10" opacity=".55"/>
+</g>
+<rect x="140" y="70" width="180" height="312" rx="10" fill="#fff" opacity=".72"/>
+<!-- lock + zero timer -->
+<g transform="translate(230 170)"><g class="lock">
+  <path class="il-line" d="M-18 0V-14A18 18 0 0 1 18 -14V0" stroke-width="5"/>
+  <rect class="il-ink" x="-28" y="0" width="56" height="44" rx="8"/>
+  <circle class="il-white" cx="0" cy="18" r="6"/><rect class="il-white" x="-2.5" y="20" width="5" height="12" rx="2"/>
+</g></g>
+<g transform="translate(230 280)">
+  <rect class="il-paper" x="-70" y="-26" width="140" height="52" rx="26"/>
+  <text class="il-sans il-ink" x="0" y="9" font-size="26" text-anchor="middle">0 min</text>
+</g>
+
+<!-- right: long-form video card still available -->
+<g transform="translate(420 120)">
+  <rect class="il-paper" x="0" y="0" width="300" height="210" rx="16"/>
+  <rect class="il-mute" x="18" y="18" width="264" height="132" rx="8"/>
+  <path class="il-hot" d="M136 62L136 106L174 84Z"/>
+  <rect class="il-ink" x="18" y="166" width="190" height="10" rx="5"/>
+  <rect class="il-mute" x="18" y="184" width="130" height="9" rx="4.5"/>
+  <circle class="il-acc" cx="262" cy="180" r="14"/>
+  <path d="M255 180L260 186L270 174" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<!-- divider arrow -->
+<path class="il-line" d="M352 226H404" stroke-dasharray="4 6"/>
+</svg>
