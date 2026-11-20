@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+<style>
+.p{fill:#fff;stroke:#111;stroke-width:1.5}.l{fill:none;stroke:#111;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.k{fill:#111}.m{fill:#D6D6D6}.y{fill:#FFD60A}.n{fill:#1F3BFF}.h{fill:#FF4B14}
+.t{font-family:"Noto Sans",Arial,sans-serif;fill:#111}.tw{font-family:"Noto Sans",Arial,sans-serif;fill:#fff}
+@media (prefers-reduced-motion:no-preference){.sp{animation:s 1.6s linear infinite;transform-box:fill-box;transform-origin:50% 50%}.bl{animation:g 2.4s ease-in-out infinite}}
+@keyframes s{to{transform:rotate(360deg)}}@keyframes g{0%,100%{opacity:1}50%{opacity:.35}}
+</style>
+<rect width="800" height="450" fill="#EDEDED"/>
+<rect class="p" x="285" y="30" width="230" height="390" rx="24"/><rect class="k" x="372" y="42" width="56" height="6" rx="3"/>
+<rect class="p" x="315" y="64" width="170" height="34" rx="17"/><rect class="m" x="319" y="68" width="80" height="26" rx="13"/><rect class="k" x="401" y="68" width="80" height="26" rx="13"/>
+<text class="t" x="359" y="86" font-size="13" text-anchor="middle" font-weight="600">Chat</text><text class="tw" x="441" y="86" font-size="13" text-anchor="middle" font-weight="700">Task</text>
+<rect class="p" x="303" y="114" width="194" height="58" rx="12"/><text class="t" x="315" y="137" font-size="12" font-weight="600">Plan a Jaipur trip for</text><text class="t" x="315" y="156" font-size="12" font-weight="600">four, under ₹40,000</text>
+<g><circle cx="318" cy="198" r="8" class="n"/><path d="M314 198l3 3 5-6" stroke="#fff" stroke-width="2" fill="none"/><text class="t" x="334" y="202" font-size="12">Compared trains</text></g>
+<g><circle cx="318" cy="226" r="8" class="n"/><path d="M314 226l3 3 5-6" stroke="#fff" stroke-width="2" fill="none"/><text class="t" x="334" y="230" font-size="12">Shortlisted 3 hotels</text></g>
+<g><circle class="sp" cx="318" cy="254" r="8" fill="none" stroke="#1F3BFF" stroke-width="3" stroke-dasharray="30 20"/><text class="t bl" x="334" y="258" font-size="12">Drafting day plan…</text></g>
+<rect class="y" x="303" y="292" width="194" height="76" rx="12" stroke="#111" stroke-width="1.5"/><text class="t" x="315" y="314" font-size="12" font-weight="700">Ready to book?</text><text class="t" x="315" y="332" font-size="11">Gemini asks before it pays</text>
+<rect class="k" x="315" y="340" width="80" height="20" rx="10"/><text class="tw" x="355" y="354" font-size="11" text-anchor="middle" font-weight="700">Confirm</text>
+<rect class="p" x="402" y="340" width="80" height="20" rx="10"/><text class="t" x="442" y="354" font-size="11" text-anchor="middle">Not now</text>
+<rect class="p" x="303" y="382" width="194" height="24" rx="12"/><rect class="m" x="315" y="392" width="120" height="4" rx="2"/>
+<g transform="translate(560 120)"><rect class="p" width="170" height="64" rx="12"/><circle cx="26" cy="32" r="12" class="h"/><text class="t" x="48" y="28" font-size="12" font-weight="700">Task finished</text><text class="t" x="48" y="46" font-size="11">Your itinerary is ready</text></g>
+<path class="l" d="M515 210 C540 200 545 190 560 170" stroke-dasharray="4 5"/>
+<g transform="translate(70 150)"><rect class="p" width="160" height="110" rx="12"/><text class="t" x="16" y="28" font-size="12" font-weight="700">Works while</text><text class="t" x="16" y="46" font-size="12" font-weight="700">you close the app</text><rect class="m" x="16" y="62" width="128" height="8" rx="4"/><rect class="n" x="16" y="62" width="84" height="8" rx="4"/><text class="t" x="16" y="94" font-size="11">Free in India</text></g>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+<style>
+.p{fill:#fff;stroke:#111;stroke-width:1.5}.l{fill:none;stroke:#111;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.k{fill:#111}.m{fill:#D6D6D6}.y{fill:#FFD60A}.n{fill:#1F3BFF}.h{fill:#FF4B14}.g{fill:#1BA94C}
+.t{font-family:"Noto Sans",Arial,sans-serif;fill:#111}
+@media (prefers-reduced-motion:no-preference){.bl{animation:b 2.4s ease-in-out infinite}}
+@keyframes b{0%,100%{opacity:1}50%{opacity:.4}}
+</style>
+<rect width="800" height="450" fill="#EDEDED"/>
+<rect class="p" x="60" y="36" width="680" height="378" rx="18"/>
+<g font-size="13"><rect class="m" x="84" y="56" width="74" height="26" rx="13"/><text class="t" x="121" y="74" text-anchor="middle">Chart</text><rect class="m" x="166" y="56" width="112" height="26" rx="13"/><text class="t" x="222" y="74" text-anchor="middle">Fundamentals</text><rect class="k" x="286" y="56" width="104" height="26" rx="13"/><text x="338" y="74" text-anchor="middle" fill="#fff" font-family="Noto Sans,Arial,sans-serif" font-weight="700">Technicals</text></g>
+<path class="l" d="M84 330 H400"/>
+<g><rect class="g" x="100" y="250" width="14" height="50" stroke="#111"/><path class="l" d="M107 238V250M107 300V312"/><rect class="h" x="128" y="262" width="14" height="40" stroke="#111"/><path class="l" d="M135 254V262M135 302V316"/><rect class="g" x="156" y="226" width="14" height="60" stroke="#111"/><path class="l" d="M163 214V226M163 286V296"/><rect class="g" x="184" y="204" width="14" height="44" stroke="#111"/><path class="l" d="M191 194V204M191 248V258"/><rect class="h" x="212" y="214" width="14" height="30" stroke="#111"/><path class="l" d="M219 202V214M219 244V256"/><rect class="g" x="240" y="180" width="14" height="50" stroke="#111"/><path class="l" d="M247 168V180M247 230V240"/><rect class="g" x="268" y="160" width="14" height="40" stroke="#111"/><path class="l" d="M275 150V160M275 200V210"/><rect class="g" x="296" y="140" width="14" height="38" stroke="#111"/><path class="l" d="M303 128V140M303 178V186"/>
+<rect class="g" x="330" y="122" width="14" height="36" stroke="#111"/><path class="l" d="M337 110V122M337 158V168"/></g>
+<g class="bl"><rect class="y" x="352" y="92" width="38" height="24" rx="6" stroke="#111"/><path d="M371 98 l-6 9 h12z" class="k"/></g>
+<path d="M84 196 H400" stroke="#1F3BFF" stroke-width="1.5" stroke-dasharray="6 5"/><text class="t" x="88" y="190" font-size="11">Resistance</text>
+<path d="M84 300 H400" stroke="#1F3BFF" stroke-width="1.5" stroke-dasharray="6 5"/><text class="t" x="88" y="318" font-size="11">Support</text>
+<g transform="translate(430 104)">
+<rect class="p" width="140" height="132" rx="12"/><text class="t" x="14" y="28" font-size="13" font-weight="700">Trend</text><path class="l" d="M30 100 A40 40 0 0 1 110 100"/><path d="M70 100 L98 74" stroke="#1BA94C" stroke-width="4" stroke-linecap="round"/><circle cx="70" cy="100" r="5" class="k"/><text class="t" x="70" y="122" font-size="12" text-anchor="middle">Bullish</text>
+<g transform="translate(152 0)"><rect class="p" width="140" height="132" rx="12"/><text class="t" x="14" y="28" font-size="13" font-weight="700">Momentum</text><path class="l" d="M30 100 A40 40 0 0 1 110 100"/><path d="M70 100 L70 62" stroke="#111" stroke-width="4" stroke-linecap="round"/><circle cx="70" cy="100" r="5" class="k"/><text class="t" x="70" y="122" font-size="12" text-anchor="middle">Neutral</text></g>
+<g transform="translate(0 146)"><rect class="p" width="140" height="132" rx="12"/><text class="t" x="14" y="28" font-size="13" font-weight="700">Volatility</text><path class="l" d="M24 76 C50 48 90 48 116 76 M24 76 C50 104 90 104 116 76"/><text class="t" x="70" y="122" font-size="12" text-anchor="middle">Expanding</text></g>
+<g transform="translate(152 146)"><rect class="p" width="140" height="132" rx="12"/><text class="t" x="14" y="28" font-size="13" font-weight="700">Volume</text><rect class="n" x="26" y="80" width="12" height="22"/><rect class="n" x="44" y="70" width="12" height="32"/><rect class="n" x="62" y="60" width="12" height="42"/><rect class="n" x="80" y="52" width="12" height="50"/><rect class="n" x="98" y="44" width="12" height="58"/><text class="t" x="70" y="122" font-size="12" text-anchor="middle">Accumulation</text></g>
+</g>
+</svg>
