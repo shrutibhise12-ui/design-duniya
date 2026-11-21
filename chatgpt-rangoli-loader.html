@@ -496,6 +496,8 @@ a.media:hover { text-decoration: none; }
 .top__bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 4px 32px; padding: 14px 0 12px; border-bottom: 1.5px solid var(--ink); }
 .top__brand { font: 800 24px/1 var(--display); letter-spacing: -0.02em; }
 .top__brand:hover { text-decoration: none; }
+.top__brand { display: inline-flex; align-items: center; gap: 10px; }
+.top__logo { width: 30px; height: 30px; border-radius: 4px; flex: none; }
 .top > .mono { padding: 14px 0 12px; }
 .contents a { display: block; }
 
@@ -699,7 +701,7 @@ a.media:hover { text-decoration: none; }
 
 <header class="wrap top reveal" style="--i:0">
   <div class="top__bar">
-    <a class="top__brand" href="index.html">Design Duniya</a>
+    <a class="top__brand" href="index.html"><img class="top__logo" src="/icon-192.png" alt="" width="30" height="30">Design Duniya</a>
   <nav class="nav" aria-label="Sections">
     <ul>
       <li><a href="index.html#taaza">Taaza</a></li>
