@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://designduniya.vercel.app/sitemap.xml
+Sitemap: https://www.designduniya.in/sitemap.xml
