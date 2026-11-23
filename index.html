@@ -751,6 +751,27 @@ a.media:hover { text-decoration: none; }
 .past__title span { display: block; margin-top: 6px; font: 700 clamp(18px, 2.2vw, 26px)/1.2 "Anek Devanagari", var(--display); color: var(--mute); }
 .past .ar__issue { padding-top: 28px; }
 .past__more { margin-top: 26px; }
+/* Diwali call to action (replaces the old Diwali section) */
+.fest { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 16px 32px; margin-top: 48px; padding-top: 26px; padding-bottom: 26px; border-top: 2.5px solid var(--ink); border-bottom: 1.5px solid var(--ink); }
+.fest__text { max-width: 40em; }
+.fest__title { margin-top: 10px; font: 800 clamp(26px, 3.2vw, 40px)/1.05 var(--display); letter-spacing: -0.02em; }
+.fest__title span { font-family: "Anek Devanagari", var(--display); color: var(--mute); }
+.fest__dek { margin-top: 10px; font-size: 17px; line-height: 1.45; color: #333; }
+.fest .go { margin-top: 0; white-space: nowrap; }
+/* Past stories, compact: titles only, the two latest issues until "Show older issues" */
+.past .ar__dek, .past .ar__date { display: none; }
+.past .ar__issue { padding-top: 22px; }
+.past .ar__head { padding-bottom: 8px; font-size: clamp(19px, 2vw, 24px); }
+.past .ar__head time { font-size: 13px; }
+.past .ql.ar a { grid-template-columns: 150px minmax(0, 1fr); padding: 10px 0; }
+.past .ql.ar .ql__app { padding-top: 2px; }
+.past .ql__title { font-size: 17px; }
+.past__more { display: flex; flex-wrap: wrap; gap: 12px 32px; }
+.past__toggle { padding: 0 0 4px; background: none; border: 0; border-bottom: 2px solid var(--ink); border-radius: 0; color: inherit; cursor: pointer; }
+.past__toggle[hidden] { display: none; }
+@media (max-width: 719.98px) {
+  .past .ql.ar a { grid-template-columns: minmax(0, 1fr); row-gap: 4px; }
+}
 </style>
 
 <a class="skip" href="#main">Skip to main content</a>
@@ -810,7 +831,7 @@ a.media:hover { text-decoration: none; }
         <li><span class="mono mute">News</span><a href="#news-1">Save8 compares prices before you pay</a></li>
         <li><span class="mono mute">News</span><a href="#news-2">A startup sues Apple over NameDrop</a></li>
         <li><span class="mono mute">News</span><a href="#news-3">WhatsApp tests view-once text</a></li>
-        <li><span class="mono mute">Last issue</span><a href="#quick">Samsung, Figma, Messy UX and more</a></li>
+        <li><span class="mono mute">Last issue</span><a href="#quick">Samsung, Figma, Messy UX</a></li>
         <li><span class="mono mute">Diwali issue</span><a href="#festive">Diwali in Indian apps</a></li>
       </ol>
     </nav>
@@ -865,44 +886,24 @@ a.media:hover { text-decoration: none; }
         <li><a href="figma-image-compare.html"><span class="ql__app mono"><i class="logo" aria-hidden="true"><img src="images/logos/figma.png" alt=""></i>Figma</span><span class="ql__title">Figma lets three image models take the same brief</span></a></li>
         <li><a href="messy-ux-bengaluru.html"><span class="ql__app mono"><i class="logo logo--text" aria-hidden="true">M</i>Messy UX</span><span class="ql__title">A UX conference that admits the work is messy</span></a></li>
         <li><a href="figma-config-2027.html"><span class="ql__app mono"><i class="logo" aria-hidden="true"><img src="images/logos/figma.png" alt=""></i>Figma Config</span><span class="ql__title">Config 2027 is set for May</span></a></li>
-        <li><a href="instagram-story-edit.html"><span class="ql__app mono"><i class="logo" aria-hidden="true"><img src="images/logos/instagram.png" alt=""></i>Instagram</span><span class="ql__title">Instagram gives Stories a 15-minute second chance</span></a></li>
-        <li><a href="spotify-running-mode.html"><span class="ql__app mono"><i class="logo" aria-hidden="true"><img src="images/logos/spotify.png" alt=""></i>Spotify</span><span class="ql__title">Spotify’s Running Mode reaches India and keeps time with your feet</span></a></li>
-        <li><a href="gemini-tasks-india.html"><span class="ql__app mono"><i class="logo" aria-hidden="true"><img src="images/logos/google.png" alt=""></i>Gemini</span><span class="ql__title">Gemini gets a Task switch, and India gets it free</span></a></li>
-        <li><a href="kite-technicals.html"><span class="ql__app mono"><i class="logo" aria-hidden="true"><img src="images/logos/kite.png" alt=""></i>Kite</span><span class="ql__title">Kite turns a dozen indicators into four plain words</span></a></li>
-        <li><a href="apple-maps-india.html"><span class="ql__app mono"><i class="logo" aria-hidden="true"><img src="images/logos/applemaps.png" alt=""></i>Apple Maps</span><span class="ql__title">Apple Maps learns to give directions the Indian way</span></a></li>
         <li id="soch"><a href="let-the-skin-expire.html"><span class="ql__app mono"><span lang="hi">सोच</span></span><span class="ql__title">Apps should take their Diwali features <em>down</em> after Diwali</span></a></li>
       </ul>
     </div>
   </section>
 
-  <section class="wrap duo">
-    <article class="col" id="festive">
-      <span></span>
-      <a class="media tone-board" href="whatsapp-phataka-like.html" tabindex="-1" aria-hidden="true"><img src="images/whatsapp-phataka.jpg" alt="" loading="lazy"></a>
-      <p class="kick mono"><i class="logo" aria-hidden="true"><img src="images/logos/whatsapp.png" alt=""></i><span><b>Festive</b> / WhatsApp / 3 min read</span></p>
-      <h3 class="hl hl--l"><a href="whatsapp-phataka-like.html">WhatsApp’s Diwali like goes off like a phataka</a></h3>
-      <p class="dek">Tapping the heart on a Status sets off a fireworks animation. No update prompt, no setting.</p>
-      <a class="arrow" href="whatsapp-phataka-like.html" aria-label="Read: WhatsApp’s Diwali like goes off like a phataka">→</a>
-    </article>
-    <div class="col">
-      <p class="kick mono"><span><b>From the Diwali issue</b> / Issue 01</span></p>
-      <ul class="ql">
-        <li><a href="google-celebrate-diwali.html"><span class="ql__app mono"><i class="logo" aria-hidden="true"><img src="images/logos/google.png" alt=""></i>Google</span><span class="ql__title">Google Search opens a ‘Celebrate Diwali’ studio</span></a></li>
-        <li><a href="chatgpt-rangoli-loader.html"><span class="ql__app mono"><i class="logo" aria-hidden="true"><img src="images/logos/chatgpt.png" alt=""></i>ChatGPT</span><span class="ql__title">ChatGPT draws a rangoli while you wait</span></a></li>
-        <li><a href="arattai-diya-name.html"><span class="ql__app mono"><i class="logo" aria-hidden="true"><img src="images/logos/arattai.png" alt=""></i>Arattai</span><span class="ql__title">Arattai lights a diya beside your name</span></a></li>
-        <li><a href="swiggy-sweety.html"><span class="ql__app mono"><i class="logo" aria-hidden="true"><img src="images/logos/swiggy.png" alt=""></i>Swiggy</span><span class="ql__title">Swiggy answers to ‘Sweety’ for Diwali</span></a></li>
-        <li><a href="igp-guard-gift.html"><span class="ql__app mono"><i class="logo" aria-hidden="true"><img src="images/logos/igp.png" alt=""></i>IGP</span><span class="ql__title">A gift for the building’s guards, added at checkout</span></a></li>
-        <li id="patterns"><a href="zepto-diya-game.html"><span class="ql__app mono"><i class="logo" aria-hidden="true"><img src="images/logos/zepto.png" alt=""></i>Zepto</span><span class="ql__title">Zepto hands you a diya to light</span></a></li>
-        <li><a href="instamart-festive-home.html"><span class="ql__app mono"><i class="logo" aria-hidden="true"><img src="images/logos/instamart.png" alt=""></i>Instamart</span><span class="ql__title">Instamart redraws its homepage for the festival</span></a></li>
-        <li><a href="blinkit-rocket-challenge.html"><span class="ql__app mono"><i class="logo" aria-hidden="true"><img src="images/logos/blinkit.png" alt=""></i>Blinkit</span><span class="ql__title">Blinkit lets you change the Diwali lights</span></a></li>
-      </ul>
+  <section class="wrap fest" id="festive" aria-labelledby="fest-head">
+    <div class="fest__text">
+      <p class="kick mono" id="patterns"><span><b>Diwali issue</b> / Issue 01 / 10 stories</span></p>
+      <h2 class="fest__title" id="fest-head">Missed the Diwali updates? <span lang="hi">दिवाली</span></h2>
+      <p class="fest__dek">Fireworks on WhatsApp likes, a rangoli loader in ChatGPT, diya games on Zepto and Arattai, Swiggy’s ‘Sweety’ and more, all in one issue.</p>
     </div>
+    <a class="go" href="archive.html#issue-01">See Diwali updates <span aria-hidden="true">→</span></a>
   </section>
 
   <section class="wrap past" id="past" aria-labelledby="past-head">
     <div class="past__top">
       <h2 class="past__title" id="past-head">Past stories <span lang="hi">पुरानी ख़बरें</span></h2>
-      <div class="dd-pick"><label class="dd-pick__label" for="dd-date-past">Edition date</label><select class="dd-date" id="dd-date-past"><option value="all">All past dates</option><option value="issue-06">Sun 22 Nov 2026 · Issue 06</option><option value="issue-05">Sat 21 Nov 2026 · Issue 05</option><option value="issue-04">Fri 20 Nov 2026 · Issue 04</option><option value="issue-03">Thu 19 Nov 2026 · Issue 03</option><option value="issue-02">Wed 18 Nov 2026 · Issue 02</option><option value="issue-01">Fri 13 Nov 2026 · Issue 01</option></select></div>
+      <div class="dd-pick"><label class="dd-pick__label" for="dd-date-past">Edition date</label><select class="dd-date" id="dd-date-past"><option value="all">Latest past issues</option><option value="issue-06">Sun 22 Nov 2026 · Issue 06</option><option value="issue-05">Sat 21 Nov 2026 · Issue 05</option><option value="issue-04">Fri 20 Nov 2026 · Issue 04</option><option value="issue-03">Thu 19 Nov 2026 · Issue 03</option><option value="issue-02">Wed 18 Nov 2026 · Issue 02</option><option value="issue-01">Fri 13 Nov 2026 · Issue 01</option></select></div>
     </div>
     <section class="ar__issue" id="issue-06" aria-labelledby="issue-06-head">
       <h2 class="ar__head" id="issue-06-head"><span class="ar__no">Issue 06</span> Locks and layers<time class="mono mute" datetime="2026-11-22">Sun 22 Nov 2026</time></h2>
@@ -960,7 +961,7 @@ a.media:hover { text-decoration: none; }
         <li><a href="chatgpt-rangoli-loader.html"><span class="ar__date mono">5 Nov 2026</span><span class="ql__app mono"><i class="logo" aria-hidden="true"><img src="images/logos/chatgpt.png" alt=""></i>ChatGPT</span><span class="ar__txt"><span class="ql__title">ChatGPT draws a rangoli while you wait</span><span class="ar__dek">While an image generates, the loading animation is now a rangoli of glowing orange and pink dots. It took over from the Halloween version.</span></span></a></li>
       </ul>
     </section>
-    <p class="past__more"><a class="go" href="archive.html">Full archive <span aria-hidden="true">→</span></a></p>
+    <p class="past__more"><button class="go past__toggle" type="button" id="past-toggle" hidden>Show older issues <span aria-hidden="true">↓</span></button><a class="go" href="archive.html">Full archive <span aria-hidden="true">→</span></a></p>
   </section>
 
   <section class="wrap wk" id="weekly" aria-labelledby="weekly-head">
@@ -1124,6 +1125,18 @@ a.media:hover { text-decoration: none; }
   }
   pickers.forEach(function (p) { p.addEventListener('change', function () { show(p.value, true); }); });
   if (/^#issue-\d+$/.test(location.hash)) show(location.hash.slice(1), true);
+})();
+</script>
+<script>
+/* Past stories: show only the two latest past issues until the reader asks for more. */
+(function () {
+  var box = document.getElementById('past'), btn = document.getElementById('past-toggle'), pick = document.getElementById('dd-date-past');
+  if (!box || !btn) return;
+  var groups = [].slice.call(box.querySelectorAll('.ar__issue')), KEEP = 2;
+  function recent() { groups.forEach(function (g, i) { g.hidden = i >= KEEP; }); btn.hidden = groups.length <= KEEP; }
+  if (/^#issue-\d+$/.test(location.hash)) btn.hidden = true; else recent();
+  btn.addEventListener('click', function () { groups.forEach(function (g) { g.hidden = false; }); btn.hidden = true; });
+  if (pick) pick.addEventListener('change', function () { if (pick.value === 'all') recent(); else btn.hidden = true; });
 })();
 </script>
 </body>
