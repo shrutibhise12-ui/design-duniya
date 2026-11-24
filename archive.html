@@ -11,13 +11,21 @@
 <script defer src="/_vercel/insights/script.js"></script>
 <style>
 /* Design fields: filter */
-.fields { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding: 12px 0; margin-bottom: 24px; border-top: 2px solid var(--ink); border-bottom: 1px solid var(--ink); }
-.fields__label { font: 500 12px/1 var(--mono); color: var(--mute); margin-right: 4px; text-transform: uppercase; letter-spacing: 0.04em; }
-.fields button { padding: 7px 14px; border: 1px solid var(--ink); border-radius: 999px; background: var(--paper); color: var(--ink); font: 500 14px/1 var(--sans); cursor: pointer; }
-.fields button:hover { background: var(--fog); }
-.fields button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+.fields { margin: 40px 0 32px; padding-top: 22px; border-top: 2px solid var(--ink); }
+.fields__label { display: flex; align-items: center; gap: 12px; margin: 0 0 14px; font: 500 15px/1 var(--mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink); }
+.fields__label::before { content: ""; width: 26px; height: 12px; background: var(--board); transform: skewX(-20deg); }
+.fields__tabs { display: flex; justify-content: space-between; gap: 8px 28px; overflow-x: auto; scrollbar-width: none; border-bottom: 1px solid #CFCFCF; }
+.fields__tabs::-webkit-scrollbar { display: none; }
+.fields__tabs button { flex: none; position: relative; padding: 6px 2px 14px; border: 0; background: none; color: #333; font: 400 clamp(17px, 1.9vw, 24px)/1.2 var(--sans); cursor: pointer; white-space: nowrap; }
+.fields__tabs button:hover { color: var(--ink); }
+.fields__tabs button::after { content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 5px; background: var(--ink); transform: scaleX(0); transition: transform .2s; }
+.fields__tabs button[aria-pressed="true"] { color: var(--ink); font-weight: 700; }
+.fields__tabs button[aria-pressed="true"]::after { transform: scaleX(1); }
+.fields__tabs button:focus-visible { outline: 2px solid var(--neel); outline-offset: 2px; }
 .fields__none { padding: 16px 0 8px; color: var(--mute); }
 .is-off, .is-empty { display: none !important; }
+@media (max-width: 760px) { .fields__tabs { justify-content: flex-start; } .fields__tabs button { font-size: 17px; } }
+@media (prefers-reduced-motion: reduce) { .fields__tabs button::after { transition: none; } }
 </style>
 <meta name="description" content="Every Design Duniya story so far, issue by issue.">
 <meta name="theme-color" content="#FFD60A">
@@ -799,8 +807,8 @@ a.media:hover { text-decoration: none; }
     </div>
   </div>
   <div class="wrap">
-    <div class="fields" role="group" aria-label="Filter stories by design field"><span class="fields__label">Field</span><button type="button" data-f="all" aria-pressed="true">All</button><button type="button" data-f="ux" aria-pressed="false">UI/UX</button><button type="button" data-f="graphic" aria-pressed="false">Graphic &amp; branding</button></div>
-    <p class="fields__none" id="fields-none" hidden>No stories from this field yet. Graphic &amp; branding news starts with the next issue.</p>
+    <div class="fields" role="group" aria-labelledby="fields-head"><p class="fields__label" id="fields-head">Explore by field</p><div class="fields__tabs"><button type="button" data-f="all" aria-pressed="true">All fields</button><button type="button" data-f="ux" aria-pressed="false">UI &amp; UX</button><button type="button" data-f="graphic" aria-pressed="false">Graphic &amp; Visual</button><button type="button" data-f="textile" aria-pressed="false">Textile &amp; Surface</button><button type="button" data-f="industrial" aria-pressed="false">Industrial Design</button><button type="button" data-f="product" aria-pressed="false">Product Design</button></div></div>
+    <p class="fields__none" id="fields-none" hidden>No stories from this field yet. New fields start with the next issue.</p>
   </div>
   <div class="wrap" id="editions">
     <section class="ar__issue" id="issue-08" aria-labelledby="issue-08-head">
@@ -904,7 +912,7 @@ a.media:hover { text-decoration: none; }
 })();
 </script>
 <script>
-/* Design fields filter: All / UI/UX / Graphic & branding. ?field=ux works as a link. */
+/* Design fields filter: all, ux, graphic, textile, industrial, product. ?field=ux works as a link. */
 (function () {
   var bars = document.querySelectorAll('.fields'); if (!bars.length) return;
   var none = document.getElementById('fields-none');
@@ -917,7 +925,7 @@ a.media:hover { text-decoration: none; }
   }
   document.querySelectorAll('.fields button').forEach(function (b) { b.addEventListener('click', function () { apply(b.getAttribute('data-f')); }); });
   var q = (location.search.match(/[?&]field=(\w+)/) || [])[1];
-  if (q === 'ux' || q === 'graphic') apply(q);
+  if (/^(ux|graphic|textile|industrial|product)$/.test(q || '')) apply(q);
 })();
 </script>
 </body>
