@@ -693,6 +693,26 @@ a.media:hover { text-decoration: none; }
   .wk__btn { margin-top: 20px; }
 }
 </style>
+<style>
+/* WhatsApp community invite */
+.wa-join { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 16px 24px; margin-top: 44px; padding: 24px 28px; background: var(--fog); }
+.wa-join__icon { width: 52px; height: 52px; border-radius: 24%; }
+.wa-join__title { font: 700 clamp(22px, 2.4vw, 30px)/1.1 var(--sans); letter-spacing: -0.015em; }
+.wa-join__text { margin-top: 6px; font-size: 15px; line-height: 1.45; color: #333; max-width: 46em; }
+.wa-join__btn { display: inline-flex; align-items: center; gap: 12px; padding: 14px 22px; background: var(--ink); color: var(--paper); font: 600 16px/1.2 var(--sans); white-space: nowrap; }
+.wa-join__btn:hover { text-decoration: none; }
+.wa-join__btn span { transition: translate 160ms ease; }
+.wa-join__btn:hover span { translate: 4px 0; }
+.article__side .wa-join, .ar__intro .wa-join { grid-template-columns: auto minmax(0, 1fr); padding: 20px; margin-top: 24px; }
+.article__side .wa-join .wa-join__btn, .ar__intro .wa-join .wa-join__btn { grid-column: 1 / -1; justify-content: center; }
+.article__side .wa-join__icon { width: 40px; height: 40px; }
+.article__side .wa-join__title { font-size: 20px; }
+@media (max-width: 719.98px) {
+  .wa-join { grid-template-columns: auto minmax(0, 1fr); padding: 20px 16px; }
+  .wa-join__icon { width: 40px; height: 40px; }
+  .wa-join__btn { grid-column: 1 / -1; justify-content: center; }
+}
+</style>
 </head>
 
 <body>
@@ -711,6 +731,7 @@ a.media:hover { text-decoration: none; }
       <li><a href="index.html#patterns">Patterns</a></li>
       <li><a href="index.html#weekly">Weekly Edition</a></li>
       <li><a href="archive.html">Archive</a></li>
+      <li><a href="https://chat.whatsapp.com/FhTeFX5vNGxD3B60hBLyeq" target="_blank" rel="noopener">Join on WhatsApp</a></li>
     </ul>
   </nav>
   </div>
@@ -780,6 +801,11 @@ a.media:hover { text-decoration: none; }
           <span class="rel__txt"><span class="mono rel__k">Quick read</span><span class="rel__t">MediaNama’s redesign looks dated on purpose</span><span class="mono mute">1 min read</span></span>
         </a></li>
       </ul>
+      <div class="wa-join" aria-label="Join the Design Duniya WhatsApp community">
+      <img class="wa-join__icon" src="images/logos/whatsapp.png" alt="">
+      <div><p class="wa-join__title">Liked this story?</p><p class="wa-join__text">Get every new Design Duniya story on WhatsApp.</p></div>
+      <a class="wa-join__btn" href="https://chat.whatsapp.com/FhTeFX5vNGxD3B60hBLyeq" target="_blank" rel="noopener">Join the community <span aria-hidden="true">→</span></a>
+    </div>
       <p class="article__side-note"><a href="index.html">← Back to the front page</a></p>
     </aside>
   </div>
@@ -801,6 +827,7 @@ a.media:hover { text-decoration: none; }
 
 <footer class="wrap footer mono">
   <p>© 2026 Design Duniya / Made in India</p>
+  <p><a href="https://chat.whatsapp.com/FhTeFX5vNGxD3B60hBLyeq" target="_blank" rel="noopener">Join the Design Duniya WhatsApp community →</a></p>
   <p>Illustrations are drawn by Design Duniya. Photo-style images are AI-generated, not real photos. Official app screenshots are credited to their source. Sources are credited in each article.</p>
 </footer>
 
