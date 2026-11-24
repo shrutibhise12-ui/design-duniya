@@ -9,6 +9,22 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <title>Figma lets three image models take the same brief — Design Duniya</title>
 <script defer src="/_vercel/insights/script.js"></script>
+<style>
+/* Design fields: tags + filter */
+.fld { display: inline-block; padding: 2px 7px; border: 1px solid var(--ink); border-radius: 999px; font: 500 11px/1.3 var(--mono); letter-spacing: 0.02em; text-transform: none; color: var(--ink); background: var(--paper); white-space: nowrap; text-decoration: none; }
+.fld--ux { background: #E8ECFF; border-color: var(--neel); color: var(--neel); }
+.fld--graphic { background: #FFF1D6; border-color: #B35C00; color: #8A4600; }
+.kick .fld { margin-left: 8px; }
+.ql__app .fld { margin-left: 6px; }
+.article__kick .fld { letter-spacing: 0.02em; font-weight: 500; }
+.fields { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding: 12px 0; margin-bottom: 24px; border-top: 2px solid var(--ink); border-bottom: 1px solid var(--ink); }
+.fields__label { font: 500 12px/1 var(--mono); color: var(--mute); margin-right: 4px; text-transform: uppercase; letter-spacing: 0.04em; }
+.fields button { padding: 7px 14px; border: 1px solid var(--ink); border-radius: 999px; background: var(--paper); color: var(--ink); font: 500 14px/1 var(--sans); cursor: pointer; }
+.fields button:hover { background: var(--fog); }
+.fields button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+.fields__none { padding: 16px 0 8px; color: var(--mute); }
+.is-off, .is-empty { display: none !important; }
+</style>
 <meta name="description" content="Figma’s AI image tool can now run one prompt through up to three models at once and lay every result on the canvas, so designers compare before they choose.">
 <meta name="theme-color" content="#FFD60A">
 <link rel="canonical" href="https://www.designduniya.in/figma-image-compare.html">
@@ -752,7 +768,7 @@ a.media:hover { text-decoration: none; }
       <p class="article__rail-read mono">2 min read</p>
     </aside>
     <article class="article">
-      <p class="article__kick mono">News <span>/</span> Figma</p>
+      <p class="article__kick mono">News <span>/</span> Figma<span>/</span><a class="fld fld--ux" href="archive.html?field=ux">UI/UX</a></p>
       <h1 class="article__title">Figma lets three image models take the same brief</h1>
       <p class="article__standfirst">Write one prompt, pick up to three models, and Figma shows you what each one makes. It turns choosing an AI model into a design review.</p>
       <div class="article__by">
